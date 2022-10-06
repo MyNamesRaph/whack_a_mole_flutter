@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(),
-      //home: const Home(title: 'Whack-a-mole Home')
+      home: const Home(title: 'Whack-a-mole Home')
       //home: const ScoreValidator(title: 'Score Validator')
-      home: const HighScores(title: 'High Score')
+      //home: const HighScores(title: 'High Score')
       //home: const About(title: 'About')
     );
   }
