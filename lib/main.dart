@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whack_a_mole_flutter/screens/about.dart';
+import 'package:whack_a_mole_flutter/screens/highScores.dart';
 import 'package:whack_a_mole_flutter/screens/home.dart';
 import 'package:whack_a_mole_flutter/screens/scoreValidator.dart';
 
@@ -17,7 +19,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(),
       //home: const Home(title: 'Whack-a-mole Home')
-      home: const ScoreValidator(title: 'Score Validator')
+      //home: const ScoreValidator(title: 'Score Validator')
+      home: const HighScores(title: 'High Score')
+      //home: const About(title: 'About')
     );
   }
 }
