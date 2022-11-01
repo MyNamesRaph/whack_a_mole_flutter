@@ -10,9 +10,11 @@ class Button extends StatefulWidget {
   final String text;
   final Color color;
 
-  const Button(this.text, this.color,{Key? key}) : super(key: key);
 
-
+  const Button(
+    this.text,
+    this.color,
+    {Key? key}) : super(key: key);
 
   @override
   State<Button> createState() => _ButtonState();

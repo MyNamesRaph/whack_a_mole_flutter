@@ -69,7 +69,30 @@ class _HighScoresState extends State<HighScores> {
                   );
                 }
                 ),
-              const Button("BACK TO MENU", Color(0xFF58D1FF))
+                Container(
+                  height: 50.0,
+                  width: 400.0,
+                  margin: const EdgeInsets.only(top:5.0,bottom:5.0,left:40.0,right:40.0),
+                  //padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                          fixedSize: const Size(50,200),
+                          primary: const Color(0xFF58D1FF),
+                          side: const BorderSide(
+                              color: Color(0xFF58D1FF),
+                              width: 2.0
+                          ),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(40.0)
+                          ),
+                          backgroundColor: Colors.transparent
+                      ),
+                      onPressed: () {
+                        _queryAll();
+                      },
+                      child: const Text("RELOAD")
+                  ),
+                )
             ],
           )
       ),

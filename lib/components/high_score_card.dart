@@ -8,6 +8,7 @@ import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 
 import '../data/database_helper.dart';
+import '../data/models/high_score.dart';
 
 class HighScoreCard extends StatefulWidget {
   final String date;
@@ -53,6 +54,16 @@ class _HighScoreCardState extends State<HighScoreCard> {
               },
               icon: const Icon(Icons.delete),
               color: Colors.red
+            ),
+            IconButton(
+                onPressed: () {
+                  DatabaseHelper.instance.update(
+                    HighScore(id: widget.id,playerName: "I've been edited",score: 123, creationDate: DateTime.now().toIso8601String())
+                  );
+                  setState(() {});
+                },
+                icon: const Icon(Icons.edit),
+                color: Colors.green
             )
           ],
         )
