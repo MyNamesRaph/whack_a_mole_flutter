@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../components/button.dart';
 import '../components/donut.dart';
 
 class About extends StatelessWidget {
